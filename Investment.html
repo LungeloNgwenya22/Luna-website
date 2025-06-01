@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Investments | Quantum Wealth Platform</title>
+    <meta name="description" content="AI-powered investment plans aligned with lunar cycles for optimal returns">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%238a2be2'/></svg>">
+    <style>
+        /* Ultra-compressed critical CSS */
+        :root{--p:#6e48aa;--s:#9d50bb;--l:#8a2be2;--g:#e6b0ff;--d:#0f0c24;--w:#fff}*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,sans-serif}body{background:var(--d);color:var(--w);background-image:radial-gradient(circle at 20% 30%,rgba(138,43,226,.15) 0,transparent 25%),radial-gradient(circle at 80% 70%,rgba(230,176,255,.1) 0,transparent 25%)}header{background:linear-gradient(135deg,#0f0c24,#2a0845);color:var(--w);text-align:center;padding:3rem 0;position:relative;overflow:hidden;border-bottom:1px solid var(--l)}.luna-logo{font-size:3rem;margin-bottom:1rem;display:inline-block;background:linear-gradient(to right,var(--g),var(--l));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 15px rgba(230,176,255,.5);animation:pulse 2s infinite alternate}@keyframes pulse{to{text-shadow:0 0 25px rgba(230,176,255,.8),0 0 50px rgba(230,176,255,.3)}}.container{max-width:1200px;margin:3rem auto;padding:0 2rem}.plans{display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;margin-top:3rem}.plan{background:rgba(15,12,36,.7);border-radius:15px;box-shadow:0 8px 32px rgba(0,0,0,.3);padding:2.5rem;width:320px;text-align:center;transition:all .4s;backdrop-filter:blur(10px);border:1px solid var(--l)}.plan:hover{transform:translateY(-10px);box-shadow:0 15px 40px rgba(138,43,226,.4)}.price{font-size:2.5rem;font-weight:700;margin:1.5rem 0;color:var(--w)}.btn{display:inline-block;background:linear-gradient(45deg,var(--l),var(--s));color:var(--w);padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:700;transition:all .3s;border:none;cursor:pointer;text-transform:uppercase;letter-spacing:1px}.btn:hover{transform:scale(1.05);box-shadow:0 5px 15px rgba(0,212,255,.4)}footer{text-align:center;padding:2rem 0;background:rgba(15,12,36,.8);margin-top:3rem;border-top:1px solid rgba(138,43,226,.3)}.dashboard{background:rgba(15,12,36,.7);border:1px solid var(--l);border-radius:15px;padding:2rem;margin:2rem auto;max-width:1000px;display:grid;grid-template-columns:1fr 1fr;gap:2rem}#current-moon{width:120px;height:120px;border-radius:50%;margin:0 auto 1rem;box-shadow:0 0 30px var(--g)}.crypto-ticker{display:flex;justify-content:center;gap:2rem;font-family:monospace}#3d-moon-container{width:200px;height:200px;margin:0 auto}@media (max-width:768px){.dashboard{grid-template-columns:1fr}.plan{width:100%}}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="luna-logo">
+                <i class="fas fa-moon"></i> LUNA
+            </div>
+            <h1>QUANTUM WEALTH PLATFORM</h1>
+            <p>Algorithmic investing synchronized with lunar energy cycles</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="dashboard">
+            <div class="moon-phase">
+                <h3><i class="fas fa-moon"></i> CURRENT MOON PHASE</h3>
+                <div id="current-moon"></div>
+                <p id="moon-phase-text">Calculating...</p>
+                <p>Next Full Moon: <span id="next-full-moon">-</span></p>
+            </div>
+            <div class="crypto-section">
+                <h3><i class="fas fa-coins"></i> LIVE CRYPTO (ZAR)</h3>
+                <div class="crypto-ticker">
+                    <p>BTC: <span id="btc-price">Loading...</span></p>
+                    <p>ETH: <span id="eth-price">Loading...</span></p>
+                </div>
+                <div id="3d-moon-container"></div>
+            </div>
+        </div>
+
+        <div class="plans">
+            <div class="plan">
+                <h2><i class="fas fa-moon"></i> GOLD ORBIT</h2>
+                <div class="price">R200</div>
+                <div class="period">30 LUNAR CYCLES</div>
+                <p>Core portfolio with 8-12% APY</p>
+                <button class="btn">Enroll</button>
+            </div>
+            <div class="plan">
+                <h2><i class="fas fa-stars"></i> SILVER CRESCENT</h2>
+                <div class="price">R400</div>
+                <div class="period">30 LUNAR CYCLES</div>
+                <p>Balanced growth (14-18% APY)</p>
+                <button class="btn">Enroll</button>
+            </div>
+            <div class="plan">
+                <h2><i class="fas fa-satellite"></i> SILICON FULL MOON</h2>
+                <div class="price">R400</div>
+                <div class="period">30 LUNAR CYCLES</div>
+                <p>High-frequency lunar trading</p>
+                <button class="btn">Enroll</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 LUNA FINANCIAL TECHNOLOGIES</p>
+        <div class="powered-by">POWERED BY LUNA QUANTUM AI</div>
+    </footer>
+
+    <!-- 3D Moon Library -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    
+    <!-- Compressed Main Script -->
+    <script>
+    !function(){const e=["New Moon","Waxing Crescent","First Quarter","Waxing Gibbous","Full Moon","Waning Gibbous","Last Quarter","Waning Crescent"],t=()=>{const t=new Date,n=Math.floor((((t.getTime()/1e3-1742400)%2551443)/2551443*8);document.getElementById("moon-phase-text").textContent=e[n],document.getElementById("current-moon").style.background=`conic-gradient(#000 ${45*n}deg,#fff ${45*n}deg)`,document.getElementById("next-full-moon").textContent=`${Math.round((8-n)%8*3.7)} days`},n=async()=>{try{const e=await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=zar"),t=await e.json();document.getElementById("btc-price").textContent=`R${t.bitcoin.zar.toLocaleString()}`,document.getElementById("eth-price").textContent=`R${t.ethereum.zar.toLocaleString()}`}catch(e){console.error("API Error:",e)}},a=()=>{const e=document.getElementById("3d-moon-container"),a=new THREE.Scene(),o=new THREE.PerspectiveCamera(75,1,.1,1e3),i=new THREE.WebGLRenderer({alpha:!0,antialias:!0});i.setSize(200,200),e.innerHTML="",e.appendChild(i.domElement);new THREE.TextureLoader().load("https://threejs.org/examples/textures/planets/moon_1024.jpg",e=>{const t=new THREE.Mesh(new THREE.SphereGeometry(5,64,64),new THREE.MeshStandardMaterial({map:e,roughness:.8}));a.add(t);const n=new THREE.DirectionalLight(16777215,1);n.position.set(5,3,5),a.add(n),a.add(new THREE.AmbientLight(4210752)),o.position.z=10;const r=()=>{requestAnimationFrame(r),t.rotation.y+=.005,i.render(a,o)};r()})};document.addEventListener("DOMContentLoaded",()=>{t(),n(),a(),setInterval(n,3e5),setInterval(t,36e5)})}();
+    </script>
+
+    <!-- PWA Service Worker -->
+    <script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+            .then(() => console.log('Service Worker registered'))
+            .catch(e => console.error('SW registration failed:', e));
+    }
+    </script>
+</body>
+</html>
